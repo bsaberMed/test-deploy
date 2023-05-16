@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+body{
+   background-color: rgba(70, 70, 71, 0.05);
+   height: 100%;
+}
+.full-height{
+    height: 100%;
+}

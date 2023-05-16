@@ -1,0 +1,46 @@
+/*
+ * Navbar
+ */
+ .navbar .container-fluid{
+  padding-left: 0px;
+ }
+ .navbar{
+  border-bottom:  1px solid #343a4029;
+  height: 44px;
+  background-color: white;
+ }
+ .navbar-brand {
+  text-align: center;
+  color: rgba(44, 56, 74, .681);
+  font-size: 15px;
+  padding-left: 20px;
+  }
+  .navbar-toggler{
+    color: rgba(44, 56, 74, .681);
+  }
+  .navbar-brand:hover{
+    color: rgba(44, 56, 74, .681);
+  }
+
+  .navbar-brand i {
+    padding-right: 10px;
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  
+  .navbar .form-control {
+    padding: .75rem 1rem;
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+  }
+  

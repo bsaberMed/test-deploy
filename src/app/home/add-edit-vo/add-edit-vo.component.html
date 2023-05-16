@@ -1,0 +1,86 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">...</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="form" >
+        <div class="row mb-3">
+          <label for="erasmusCode" class="col-sm-4 col-form-label">Erasum Code</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" formControlName="erasmusCode" id="erasmusCode">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="appRefNumber" class="col-sm-4 col-form-label">Application Reference Number</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="appRefNumber" id="appRefNumber">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="Pic" class="col-sm-4 col-form-label">PIC</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="Pic" id="Pic">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="organisationName" class="col-sm-4 col-form-label">Organisation Name</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="organisationName" id="organisationName">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="businessName" class="col-sm-4 col-form-label">Busness Name</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="businessName" id="businessName">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="website" class="col-sm-4 col-form-label">Website</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="website" id="website">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="adress" class="col-sm-4 col-form-label">Adresse</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="adress" id="adress">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="adress" class="col-sm-4 col-form-label">Code postale / City / coutry</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" formControlName="postcode" placeholder="postcode" aria-label="post code">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control"  formControlName="city" placeholder="City" aria-label="City">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" formControlName="country" placeholder="Country" aria-label="Country">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="adress" class="col-sm-4 col-form-label">Eche Valid from</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" formControlName="echeValidFrom" placeholder="From" aria-label="From">
+              </div>
+              <label for="adress" class="col-sm-2 col-form-label">Until</label>
+              <div class="col-sm-3">
+                  <input type="text" class="form-control" formControlName="echeValidUntil" placeholder="Until" aria-label="Until">
+                </div>
+          </div>
+    </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">
+    Close
+  </button>
+  <button [disabled]="loading" class="btn btn-primary" (click)="onSubmit()">
+    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+    Modifier
+  </button>
+</div>
