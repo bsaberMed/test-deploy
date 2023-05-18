@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'IDP-NP-FRANT'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D92DDCCD148C481BA3DA20BA58AF611E }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
